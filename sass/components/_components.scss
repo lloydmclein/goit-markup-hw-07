@@ -1,0 +1,68 @@
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.section-title {
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 72px;
+	color: $title-text-color;
+	font-size: 36px;
+	line-height: 1.11;
+	font-weight: 700;
+}
+
+
+ 
+	.section {
+		padding-top: 96px;
+		padding-bottom: 96px;
+@media screen and (min-width:1200px) {
+padding-top: 120px;
+padding-bottom: 120px;
+}
+	}
+
+	
+@media screen and(max-width:767px) {
+	.container {
+			max-width: 428px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 0 15px;
+	
+		}
+	
+}
+		@media screen and(min-width: 768px) {
+			.container {
+				width: 768px;
+				margin-left: auto;
+					margin-right: auto;
+					padding: 0 15px;
+			}
+		}
+
+		@media screen and (min-width: 1200px) {
+			.container {
+				width: 1158px;
+				margin-left: auto;
+					margin-right: auto;
+					padding: 0 15px;
+			}
+		}

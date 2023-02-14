@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Normalize -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Main styles -->
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+
+    <header class="page-header">
+      <!--Navigate-->
+
+      <div class="main-nav-container container">
+        <a class="logo" href="./index.html">
+          <span class="logo-firstpart">Web</span>Studio</a
+        >
+        <nav class="nav-container">
+          <ul class="nav-list list">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Studio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href>Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!--Contacts-->
+
+        <address class="contacts-container">
+          <ul class="contacts-list list">
+            <li class="contacts-item">
+              <a class="contacts-link" href="mailto:info@devstudio.com">
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts-item">
+              <a class="contacts-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <button class="menu-button" data-menu-open aria-expanded="false">
+          <svg class="icon-burger">
+            <use href="./images/sprite/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+
+      <div class="mobile-menu" data-menu>
+        <div class="menu-container container">
+          <button class="menu-button-close" data-menu-close>
+            <svg class="icon-close">
+              <use href="./images/sprite/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="menu-nav-list list">
+            <li class="menu-nav-item">
+              <a class="menu-nav-link" href="./index.html">Studio</a>
+            </li>
+            <li class="menu-nav-item">
+              <a class="menu-nav-link active" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="menu-nav-item">
+              <a class="menu-nav-link" href>Contacts</a>
+            </li>
+          </ul>
+          <address class="menu-contacts">
+            <ul class="menu-contacts-list list">
+              <li class="menu-contacts-item">
+                <a class="menu-contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="menu-contacts-item">
+                <a
+                  class="menu-contacts-link email"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="menu-social-list list">
+            <li class="menu-social-item">
+              <a class="menu-social-link" href aria-label="instagram">
+                <svg class="social-icon">
+                  <use href="./images/sprite/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-social-item">
+              <a class="menu-social-link" href aria-label="twitter">
+                <svg class="social-icon">
+                  <use href="./images/sprite/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-social-item">
+              <a class="menu-social-link" href aria-label="facebook">
+                <svg class="social-icon">
+                  <use href="./images/sprite/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-social-item">
+              <a class="menu-social-link" href aria-label="linkedin">
+                <svg class="social-icon">
+                  <use href="./images/sprite/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+
+    <main>
+      <!-- Section Examples -->
+
+      <section class="section-examples section">
+        <div class="examples-wrap container">
+          <h1 class="visually-hidden">Examples</h1>
+
+          <div class="examples-nav-container">
+            <ul class="examples-nav-list list">
+              <li class="examples-nav-item">
+                <button class="examples-nav-button" type="button">All</button>
+              </li>
+
+              <li class="examples-nav-item">
+                <button class="examples-nav-button" type="button">
+                  Web Site
+                </button>
+              </li>
+
+              <li class="examples-nav-item">
+                <button class="examples-nav-button" type="button">App</button>
+              </li>
+
+              <div class="examples-button-wrap">
+                <li class="examples-nav-item">
+                  <button class="examples-nav-button" type="button">
+                    Design
+                  </button>
+                </li>
+
+                <li class="examples-nav-item">
+                  <button class="examples-nav-button" type="button">
+                    Marketing
+                  </button>
+                </li>
+              </div>
+            </ul>
+          </div>
+
+          <div class="examples-container">
+            <ul class="examples-list list">
+              <li class="examples-item">
+                <a class="examples-link" href>
+                  <div class="examples-thumb-top">
+                    <div class="examples-overlay">
+                      <p class="examples-overlay-text">
+                        14 Stylish and User-Friendly App Design Concepts · Task
+                        Manager App · Calorie Tracker App · Exotic Fruit
+                        Ecommerce App · Cloud Storage App
+                      </p>
+                    </div>
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-1-360px.webp    1x,
+                          ./images/examples/examples-1-360px@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-1-360px.jpg    1x,
+                          ./images/examples/examples-1-360px@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-1-356px.webp    1x,
+                          ./images/examples/examples-1-356px@2x.webp 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-1-356px.jpg    1x,
+                          ./images/examples/examples-1-356px@2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-1-396px.webp    1x,
+                          ./images/examples/examples-1-396px@2x.webp 2x
+                        "
+                        media="(max-width:767px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-1-396px.jpg    1x,
+                          ./images/examples/examples-1-396px@2x.jpg 2x
+                        "
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="./images/examples/examples-1.jpg"
+                        alt="Banking app"
+                        height="280"
+                        width="396"
+                      />
+                    </picture>
+                  </div>
+                  <div class="examples-thumb-bottom">
+                    <h2 class="examples-subtitle">
+                      Banking App Interface Concept
+                    </h2>
+                    <p class="examples-text">App</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="examples-item">
+                <a class="examples-link" href>
+                  <div class="examples-thumb-top">
+                    <div class="examples-overlay">
+                      <p class="examples-overlay-text">
+                        14 Stylish and User-Friendly App Design Concepts · Task
+                        Manager App · Calorie Tracker App · Exotic Fruit
+                        Ecommerce App · Cloud Storage App
+                      </p>
+                    </div>
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-2-360px.webp    1x,
+                          ./images/examples/examples-2-360px@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-2-360px.jpg    1x,
+                          ./images/examples/examples-2-360px@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-2-356px.webp    1x,
+                          ./images/examples/examples-2-356px@2x.webp 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-2-356px.jpg    1x,
+                          ./images/examples/examples-2-356px@2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-2-396px.webp    1x,
+                          ./images/examples/examples-2-396px@2x.webp 2x
+                        "
+                        media="(max-width:767px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-2-396px.jpg    1x,
+                          ./images/examples/examples-2-396px@2x.jpg 2x
+                        "
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="./images/examples/examples-2.jpg"
+                        alt="cashless product"
+                        height="280"
+                        width="396"
+                      />
+                    </picture>
+                  </div>
+                  <div class="examples-thumb-bottom">
+                    <h2 class="examples-subtitle">Cashless Payment</h2>
+                    <p class="examples-text">Marketing</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="examples-item">
+                <a class="examples-link" href>
+                  <div class="examples-thumb-top">
+                    <div class="examples-overlay">
+                      <p class="examples-overlay-text">
+                        14 Stylish and User-Friendly App Design Concepts · Task
+                        Manager App · Calorie Tracker App · Exotic Fruit
+                        Ecommerce App · Cloud Storage App
+                      </p>
+                    </div>
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-3-360px.webp    1x,
+                          ./images/examples/examples-3-360px@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-3-360px.jpg    1x,
+                          ./images/examples/examples-3-360px@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-3-356px.webp    1x,
+                          ./images/examples/examples-3-356px@2x.webp 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-3-356px.jpg    1x,
+                          ./images/examples/examples-3-356px@2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-3-396px.webp    1x,
+                          ./images/examples/examples-3-396px@2x.webp 2x
+                        "
+                        media="(max-width:767px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-3-396px.jpg    1x,
+                          ./images/examples/examples-3-396px@2x.jpg 2x
+                        "
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="./images/examples/examples-3.jpg"
+                        alt="Meditation app"
+                        height="280"
+                        width="396"
+                      />
+                    </picture>
+                  </div>
+                  <div class="examples-thumb-bottom">
+                    <h2 class="examples-subtitle">Meditaion App</h2>
+                    <p class="examples-text">App</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="examples-item">
+                <a class="examples-link" href>
+                  <div class="examples-thumb-top">
+                    <div class="examples-overlay">
+                      <p class="examples-overlay-text">
+                        14 Stylish and User-Friendly App Design Concepts · Task
+                        Manager App · Calorie Tracker App · Exotic Fruit
+                        Ecommerce App · Cloud Storage App
+                      </p>
+                    </div>
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-4-360px.webp    1x,
+                          ./images/examples/examples-4-360px@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-4-360px.jpg    1x,
+                          ./images/examples/examples-4-360px@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-4-356px.webp    1x,
+                          ./images/examples/examples-4-356px@2x.webp 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-4-356px.jpg    1x,
+                          ./images/examples/examples-4-356px@2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-4-396px.webp    1x,
+                          ./images/examples/examples-4-396px@2x.webp 2x
+                        "
+                        media="(max-width:767px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-4-396px.jpg    1x,
+                          ./images/examples/examples-4-396px@2x.jpg 2x
+                        "
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="./images/examples/examples-4.jpg"
+                        alt="Taxi app"
+                        height="280"
+                        width="396"
+                      />
+                    </picture>
+                  </div>
+                  <div class="examples-thumb-bottom">
+                    <h2 class="examples-subtitle">Taxi Service</h2>
+                    <p class="examples-text">Marketing</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="examples-item">
+                <a class="examples-link" href>
+                  <div class="examples-thumb-top">
+                    <div class="examples-overlay">
+                      <p class="examples-overlay-text">
+                        14 Stylish and User-Friendly App Design Concepts · Task
+                        Manager App · Calorie Tracker App · Exotic Fruit
+                        Ecommerce App · Cloud Storage App
+                      </p>
+                    </div>
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-5-360px.webp    1x,
+                          ./images/examples/examples-5-360px@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-5-360px.jpg    1x,
+                          ./images/examples/examples-5-360px@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-5-356px.webp    1x,
+                          ./images/examples/examples-5-356px@2x.webp 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-5-356px.jpg    1x,
+                          ./images/examples/examples-5-356px@2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-5-396px.webp    1x,
+                          ./images/examples/examples-5-396px@2x.webp 2x
+                        "
+                        media="(max-width:767px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-5-396px.jpg    1x,
+                          ./images/examples/examples-5-396px@2x.jpg 2x
+                        "
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="./images/examples/examples-5.jpg"
+                        alt="Illustrations app"
+                        height="280"
+                        width="396"
+                      />
+                    </picture>
+                  </div>
+                  <div class="examples-thumb-bottom">
+                    <h2 class="examples-subtitle">Screen Illustrations</h2>
+                    <p class="examples-text">Design</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="examples-item">
+                <a class="examples-link" href>
+                  <div class="examples-thumb-top">
+                    <div class="examples-overlay">
+                      <p class="examples-overlay-text">
+                        14 Stylish and User-Friendly App Design Concepts · Task
+                        Manager App · Calorie Tracker App · Exotic Fruit
+                        Ecommerce App · Cloud Storage App
+                      </p>
+                    </div>
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-6-360px.webp    1x,
+                          ./images/examples/examples-6-360px@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-6-360px.jpg    1x,
+                          ./images/examples/examples-6-360px@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-6-356px.webp    1x,
+                          ./images/examples/examples-6-356px@2x.webp 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-6-356px.jpg    1x,
+                          ./images/examples/examples-6-356px@2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-6-396px.webp    1x,
+                          ./images/examples/examples-6-396px@2x.webp 2x
+                        "
+                        media="(max-width:767px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-6-396px.jpg    1x,
+                          ./images/examples/examples-6-396px@2x.jpg 2x
+                        "
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="./images/examples/examples-6.jpg"
+                        alt="Online course app"
+                        height="280"
+                        width="396"
+                      />
+                    </picture>
+                  </div>
+                  <div class="examples-thumb-bottom">
+                    <h2 class="examples-subtitle">Online Courses</h2>
+                    <p class="examples-text">Marketing</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="examples-item">
+                <a class="examples-link" href>
+                  <div class="examples-thumb-top">
+                    <div class="examples-overlay">
+                      <p class="examples-overlay-text">
+                        14 Stylish and User-Friendly App Design Concepts · Task
+                        Manager App · Calorie Tracker App · Exotic Fruit
+                        Ecommerce App · Cloud Storage App
+                      </p>
+                    </div>
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-7-360px.webp    1x,
+                          ./images/examples/examples-7-360px@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-7-360px.jpg    1x,
+                          ./images/examples/examples-7-360px@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-7-356px.webp    1x,
+                          ./images/examples/examples-7-356px@2x.webp 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-7-356px.jpg    1x,
+                          ./images/examples/examples-7-356px@2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-7-396px.webp    1x,
+                          ./images/examples/examples-7-396px@2x.webp 2x
+                        "
+                        media="(max-width:767px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-7-396px.jpg    1x,
+                          ./images/examples/examples-7-396px@2x.jpg 2x
+                        "
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="./images/examples/examples-7.jpg"
+                        alt="Instastories design"
+                        height="280"
+                        width="396"
+                      />
+                    </picture>
+                  </div>
+                  <div class="examples-thumb-bottom">
+                    <h2 class="examples-subtitle">Instagram Stories Concept</h2>
+                    <p class="examples-text">Design</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="examples-item">
+                <a class="examples-link" href>
+                  <div class="examples-thumb-top">
+                    <div class="examples-overlay">
+                      <p class="examples-overlay-text">
+                        14 Stylish and User-Friendly App Design Concepts · Task
+                        Manager App · Calorie Tracker App · Exotic Fruit
+                        Ecommerce App · Cloud Storage App
+                      </p>
+                    </div>
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-8-360px.webp    1x,
+                          ./images/examples/examples-8-360px@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-8-360px.jpg    1x,
+                          ./images/examples/examples-8-360px@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-8-356px.webp    1x,
+                          ./images/examples/examples-8-356px@2x.webp 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-8-356px.jpg    1x,
+                          ./images/examples/examples-8-356px@2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-8-396px.webp    1x,
+                          ./images/examples/examples-8-396px@2x.webp 2x
+                        "
+                        media="(max-width:767px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-8-396px.jpg    1x,
+                          ./images/examples/examples-8-396px@2x.jpg 2x
+                        "
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="./images/examples/examples-8.jpg"
+                        alt="Organic food website"
+                        height="280"
+                        width="396"
+                      />
+                    </picture>
+                  </div>
+                  <div class="examples-thumb-bottom">
+                    <h2 class="examples-subtitle">Organic Food</h2>
+                    <p class="examples-text">Web Site</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="examples-item">
+                <a class="examples-link" href>
+                  <div class="examples-thumb-top">
+                    <div class="examples-overlay">
+                      <p class="examples-overlay-text">
+                        14 Stylish and User-Friendly App Design Concepts · Task
+                        Manager App · Calorie Tracker App · Exotic Fruit
+                        Ecommerce App · Cloud Storage App
+                      </p>
+                    </div>
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-9-360px.webp    1x,
+                          ./images/examples/examples-9-360px@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-9-360px.jpg    1x,
+                          ./images/examples/examples-9-360px@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-9-356px.webp    1x,
+                          ./images/examples/examples-9-356px@2x.webp 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-9-356px.jpg    1x,
+                          ./images/examples/examples-9-356px@2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/examples/examples-9-396px.webp    1x,
+                          ./images/examples/examples-9-396px@2x.webp 2x
+                        "
+                        media="(max-width:767px)"
+                      />
+                      <source
+                        type="image/jpeg"
+                        srcset="
+                          ./images/examples/examples-9-396px.jpg    1x,
+                          ./images/examples/examples-9-396px@2x.jpg 2x
+                        "
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="./images/examples/examples-9.jpg"
+                        alt="Coffee website"
+                        height="280"
+                        width="396"
+                      />
+                    </picture>
+                  </div>
+                  <div class="examples-thumb-bottom">
+                    <h2 class="examples-subtitle">Fresh Coffee</h2>
+                    <p class="examples-text">Web Site</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="footer-container">
+        <div class="logo-social-wrap">
+          <div class="footer-logo-container">
+            <a class="logo-footer" href="./index.html"
+              ><span class="logo-firstpart">Web</span
+              ><span class="logo-lastpart">Studio</span></a
+            >
+            <p class="footer-text">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+          <div class="footer-social-container">
+            <p class="footer-social-title">Social media</p>
+            <ul class="footer-social-list list">
+              <li class="footer-social-item" aria-label="instagram">
+                <a class="footer-social-link" href>
+                  <svg class="footer-social-icon">
+                    <use href="./images/sprite/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item" aria-label="twitter">
+                <a class="footer-social-link" href>
+                  <svg class="footer-social-icon">
+                    <use href="./images/sprite/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item" aria-label="facebook">
+                <a class="footer-social-link" href>
+                  <svg class="footer-social-icon">
+                    <use href="./images/sprite/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item" aria-label="linkedin">
+                <a class="footer-social-link" href>
+                  <svg class="footer-social-icon">
+                    <use href="./images/sprite/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-form-container">
+          <p class="footer-form-title">Subscribe</p>
+          <form class="footer-form">
+            <div class="input-button-wrap">
+              <input
+                class="footer-form-input"
+                type="email"
+                placeholder="E-mail"
+              />
+              <button class="footer-form-button" type="submit">
+                Subscribe<svg class="footer-plain-icon">
+                  <use href="./images/sprite/icons.svg#icon-plain"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script Js -->
+    <script src="./js/mobile_menu.js"></script>
+  </body>
+</html>

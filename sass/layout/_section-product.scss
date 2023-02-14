@@ -1,0 +1,16 @@
+@media screen and (max-width: 1199px) {
+.section-product {
+	display: none;
+}
+}
+
+@media screen and (min-width: 1200px) {
+.section-no-padding {
+		padding-top: 0;
+		padding-bottom: 120px;
+	}
+.products-list {
+	display: flex;
+		gap: 24px;
+	}
+}
